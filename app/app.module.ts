@@ -6,10 +6,11 @@ import { FormsModule }  from '@angular/forms';
 import { AnimalListComponent }  from './animal-list.component';
 import { UpdateAnimalComponent }  from './update-animal.component';
 import { NewAnimalComponent } from './new-animal.component';
+import { CompletenessPipe } from './completeness.pipe';
 
 @NgModule({
   imports: [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, AnimalListComponent, UpdateAnimalComponent, NewAnimalComponent ],
+  declarations: [ AppComponent, AnimalListComponent, UpdateAnimalComponent, NewAnimalComponent, CompletenessPipe ],
   bootstrap:    [ AppComponent ]
 })
 
