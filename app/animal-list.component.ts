@@ -10,9 +10,8 @@ import { Animal } from './animal.model';
      <option value="matureAnimals">Mature Animals</option>
    </select>
 
-  <ul>
-    <li *ngFor="let currentAnimal of childAnimalList | completeness:filterByCompleteness">Name: {{currentAnimal.name}} <br> Species: {{currentAnimal.species}}<br> Age: {{currentAnimal.age}}<br>Diet: {{currentAnimal.diet}}<br>Location: {{currentAnimal.location}}<br>Caretakers: {{currentAnimal.caretakers}}<br>Sex: {{currentAnimal.sex}}<br>Likes: {{currentAnimal.likes}}<br>Dislikes: {{currentAnimal.dislikes}}<br><br><button class="btn btn-primary" (click)=updateAnimalButton(currentAnimal)>Edit!</button><hr></li>
-  </ul>
+    <h4 *ngFor="let currentAnimal of childAnimalList | completeness:filterByCompleteness">Name: {{currentAnimal.name}} <br> Species: {{currentAnimal.species}}<br> Age: {{currentAnimal.age}}<br>Diet: {{currentAnimal.diet}}<br>Location: {{currentAnimal.location}}<br>Caretakers: {{currentAnimal.caretakers}}<br>Sex: {{currentAnimal.sex}}<br>Likes: {{currentAnimal.likes}}<br>Dislikes: {{currentAnimal.dislikes}}<br><br><button class="btn btn-primary" (click)=updateAnimalButton(currentAnimal)>Edit!</button><hr></h4>
+
   `
 })
 
